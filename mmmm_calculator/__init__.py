@@ -1,5 +1,9 @@
+from loguru import logger
+
+
 def __validate_and_return_number(n):
     """RETURNS A FUNCTION which on execution raises a TypeError"""
+    logger.info("Inside validate and return number function")
 
     def raise_TypeError_func(n):
         def raise_TypeError():
